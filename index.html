@@ -5,81 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-<body class="body">
-
-    <div class="wrapper">
-
-        <section class="name_nav">
-
-            <div class="subname_nav">
-
-                <div class="namebox">
-
-                    <h1 id="name">
-                        Kimball Hall
-                    </h1>
-
-                </div>
-
-                <nav class="navbar">
-                        <a class="active"">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                </nav>
-
-            </div>
-
-        </section>
-
-        <section class="content">
-
-            <div class="subcontent">
-
-                <div class="contenthead">
-                        <h3 id="contentheadtitle">About Me</h3>
-                </div>
-
-                <article class="articles">
-
-                         <img id="myimage" src="assets/images/myimage.png" style="width:125px;height:125px;">
-
-                         <article class="article2">
-                            <p>For twenty years I built cabinets for a living. In 2008 I decided to do something different.
-                             Both my wife and I returned to school. I got a degree in Finance and Economics. The challenge 
-                             was well worth the effort. 
-                            </p>
-
-                            <p>I have been working as a payroll tax accountant, and controller for a PEO for the last 4 years.
-                                I decided to take on this new challenge to update my skills and ability to do
-                                some of the personal objective I have.
-                            </p>
-
-                            <p>I still enjoy woodword, music and spending time with my family. I have two kids.
-                                A douaghter who is 27, lives in Salt Lake and is a techincal writer. My second child, is a son,
-                                who attends Utah State Univesity, majoring in technical writing. That get that from their mother,
-                                who I've been married to for 29 years.
-                            </p>
-
-                        </article>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <footer class="footer">
-
-            <div class="footbody">
-                copyright 2019
-            </div>
-
-        </footer>
-
-    </div>
     
+    <!-- We need to bring in the bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"  href="stylesheet.css">
+</head>
+<body>
+
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Design Home for I. Kimball Hall</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Me</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
+
+    <!-- Begin man body of content -->
+    <div class="container border border-dark" style="background:transparent url('assets/dust_scratches.png') no-repeat center center /cover">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card text-center">
+                    <div class="card-body" style="background-color:#66c010">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="text-center">
+                    <img class="img img-thumbnail" src="assets/myimage.png" alt="Image of an old guy.">
+                </div>
+                </div>
+            <div class="col-xl-9" style="background-color:white">
+                <p>For twenty years I built cabinets for a living. In 2008 I decided to do something different.
+                     Both my wife and I returned to school. I got a degree in Finance and Economics. The challenge 
+                    was well worth the effort. 
+                </p>
+
+                <p>I have been working as a payroll tax accountant, and controller for a PEO for the last 4 years.
+                   I decided to take on this new challenge to update my skills and ability to do
+                   some of the personal objective I have.
+               </p>
+
+               <p>I enjoy wood-work, music and spending time with my family. I have two kids.
+                   A daughter who is 27, lives in Salt Lake and is a techincal writer. My second child, is a son,
+                   who attends Utah State Univesity, majoring in technical writing. They get their brains from their mother,
+                   who I've been married to for 29 years.
+               </p>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="text-center">
+                        <div class="card-body">
+                            <img class="logo" src="assets/uvu_logo.png" alt="">
+                            <img class="logo" src="assets/uu_logo.png" alt="">
+                            <img class="logo" src="assets/work_logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

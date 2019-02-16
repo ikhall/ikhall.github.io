@@ -5,72 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-<body class="body">
-
-    <div class="wrapper">
-
-        <section class="name_nav">
-
-            <div class="subname_nav">
-
-                <div class="namebox">
-
-                    <h1 id="name">
-                        Kimball Hall
-                    </h1>
-
-                </div>
-
-                <nav class="navbar">
-                        <a href="index.html"">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a class="active">Contact</a>
-                </nav>
-
-            </div>
-
-        </section>
-
-        <section class="content">
-
-            <div class="subcontent">
-
-                <div class="contenthead">
-                        <h3 id="contentheadtitle">Contact Me</h3>
-                </div>
-
-                <article class="articles">
-
-                        <article class="article3">
-                            <div id="namesec">Name: </div>
-                            <div id="name">
-                                <input type="text" name="fname"></div>
-                            <br>
-                            <div id=emailsec">Email: </div>
-                            <div id="email"><input type="text" name="fname"></div>
-                            <br>
-                            <div id="messagesec">Message: </div>
-                            <div id="message"><textarea></div>
-                        </article>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <footer class="footer">
-
-            <div class="footbody">
-                copyright 2019
-            </div>
-
-        </footer>
-
-    </div>
     
+    <!-- We need to bring in the bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"  href="stylesheet.css">
+</head>
+<body>
+
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Design Home for I. Kimball Hall</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Me</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
+
+    <!-- Begin man body of content -->
+    <div class="container border border-dark" style="background:transparent url('assets/dust_scratches.png') no-repeat center center /cover">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card text-center">
+                    <div class="card-body" style="background-color:#66c010">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describeby="inputGroup-sizing-sm">
+                </div>
+                <br>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describeby="inputGroup-sizing-sm">
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Leave a message</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="text-center">
+                        <div class="card-body">
+                            <img class="logo" src="assets/uvu_logo.png" alt="">
+                            <img class="logo" src="assets/uu_logo.png" alt="">
+                            <img class="logo" src="assets/work_logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
